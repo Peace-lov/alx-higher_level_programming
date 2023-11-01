@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * check_cycle - iterates through a cycle
  * @list - list to iterate
@@ -6,17 +7,17 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *sl, *fs;
+	listint_t *slo, *fst;
 	if (list == NULL || list->next == NULL)
 		return (0);
-	sl = list->next;
-	fs = list->next->next;
-	while (sl && fs && fs->next)
+	slo = list->next;
+	fst = list->next->next;
+	while (slo && fst && fst->next)
 	{
-		if (sl == fs)
+		if (slo == fst)
 			return (1);
-		sl = slo->next;
-		fs = fs->next->next;
+		slo = slo->next;
+		fst = fst->next->next;
 	}
 	return (0);
 }
