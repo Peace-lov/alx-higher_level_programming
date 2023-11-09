@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import sys
 if __name__ == "__main__":
+    import sys
     arg = sys.argv
     length = len(arg) - 1
     if length > 1:
@@ -10,5 +10,5 @@ if __name__ == "__main__":
     elif length == 0:
         print("{} arguments.".format(length))
     else:
-        print("{} arguments:".format(length))
+        print("{} argument:".format(length))
         print("{}: {}".format(length, arg[1]))
