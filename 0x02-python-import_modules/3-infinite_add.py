@@ -1,5 +1,5 @@
-#!/usr/bin/python
-def add_argument(argv):
+#!/usr/bin/python3
+def add_arg(argv):
     size = len(argv) - 1
     if size == 0:
         print("{:d}".format(size))
@@ -12,6 +12,6 @@ def add_argument(argv):
             a += 1
         print("{:d}".format(add))
 
-    if __name__ == "___main__":
-        import sys
-        add_argument(sys.argv)
+if __name__ == "___main__":
+    import sys
+    add_arg(sys.argv)
