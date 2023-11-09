@@ -20,7 +20,6 @@ if __name__ == "__main__":
         print('{:d} {:s} {:d} = {:d}'.format(nums1,
             argv[2], nums2, res))
     else:
-        print('Unknown operator. Available operators: +, -,
-        *, and /')
+        print('Unknown operator. Available operators: +, -, *, and /')
         exit(1)
     exit(0)
