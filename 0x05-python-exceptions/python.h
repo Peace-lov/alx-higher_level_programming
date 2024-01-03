@@ -2,7 +2,7 @@
 #define _Python_H
 
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 
 
 void print_python_list(PyObject *p);
