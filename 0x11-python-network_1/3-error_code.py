@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" sends a request to the URL and displays the body of the response (decoded in utf-8).
-
+"""sends a request to the URL and displays the body of the response
 Usage: ./3-error_code.py <URL>
-handles HTTP Errors
+ - handles HTTP Errors
 """
 import sys
 import urllib.error
 import urllib.request
+
 
 if __name__ == "__main__":
     url = sys.argv[1]
